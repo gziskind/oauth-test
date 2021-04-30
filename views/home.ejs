@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>OAuth Test</title>
+</head>
+<body>
+  <script type="text/javascript">
+    function authenticate() {
+      var client_id = "<%= oauthClientId %>"
+      var redirect_uri = "http://localhost:4000/callback"
+      var scope = "<%= oauthScope %>"
+
+      window.location.href = `<%= oauthAuthorizeUrl %>?client_id=${client_id}&redirect_uri=${redirect_uri}&response_type=code&state=12345&scope=${scope}`
+    }
+  </script>
+
+  <button onclick="authenticate()">Get OAuth Results</button>
+</html>

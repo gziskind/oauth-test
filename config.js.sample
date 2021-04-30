@@ -1,0 +1,10 @@
+var config = {
+  clientId: "<client-id-from-oauth-provider>",
+  clientSecret: "<client-secret-from-oauth-provider>",
+  oauthTokenUrl:"<oauth-token-url>",
+  oauthUserInfoUrl: "<oauth-userinfo-url>",
+  oauthAuthorizeUrl: "<oauth-authorize-url>",
+  oauthScope:"<oauth-scope>"
+}
+
+module.exports = config;

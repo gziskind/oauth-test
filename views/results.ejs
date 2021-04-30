@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>OAuth Results</title>
+</head>
+<body>
+  <h1>Results from the Server</h1>
+
+  <div><b>Authorization Code:</b>: <%= code %></div>
+  <div><b>Access Token:</b> <%= accessToken %></div>
+  <div><b>JWT:</b> <pre><%= JSON.stringify(jwt, undefined, 2) %></pre></div>
+  <div><b>User Info:</b> <pre><%= JSON.stringify(userInfo, undefined, 2) %></pre></div>
+  <a href="/">Back</a>
+</body>
+</html>
